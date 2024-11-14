@@ -12,7 +12,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   List<CategoryModel> categories = [];
-  List<DietModel> diets = []; // Define diets list here
+  List<DietModel> diets = [];
 
   @override
   void initState() {
