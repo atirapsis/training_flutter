@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     _getCategories();
-    _getDiets(); // Fetch diets as well
+    _getDiets();
   }
 
   void _getCategories() {
@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
 
   void _getDiets() {
     setState(() {
-      diets = DietModel.getDiets(); // Populate diets list
+      diets = DietModel.getDiets();
     });
   }
 
@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
           const SizedBox(height: 40),
           _categoriesSection(),
           const SizedBox(height: 40),
-          _dietSection(), // Diet section included here
+          _dietSection(),
         ],
       ),
     );
